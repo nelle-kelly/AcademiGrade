@@ -1,0 +1,62 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AcademiGrade</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}"> 
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}"> 
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0">
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"></a>
+        </div>
+    </nav>
+
+   <!----------------body------------------------->
+   <div class="container d-flex">
+      <img src="{% static 'images/logo.png' %}" alt="Logo AcademiGrade">
+   </div>
+   <div class="container d-flex rounded-3 bg-light p-3 mb-0 mt-1">
+    <div class="row border border-3 p-3 mt-2 mb-2">
+        <div class="col m-5 ">
+            <form>
+                
+                <h5 class=" text-center mb-5 mt-1 ">Connexion Etudiant</h5>
+            
+                <div class="form-floating ">
+                  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                  <label for="floatingInput">Email address</label>
+                </div>
+                <div class="form-floating mt-1 ">
+                  <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                  <label for="floatingPassword">Password</label>
+                </div>
+            
+            </form>
+            <div class="col justify-content-center">
+               <a href="{% url 'etudiant' %}" class="w-100  btn btn-sm btn-dark mb-5 mt-3">Sign in</a>
+               
+            </div>
+            
+        </div>
+    </div>
+   </div>
+
+   <!---------------Pied de page------------------------->
+    <footer class="footer mt-auto py-3 ">
+        <div class="container">
+            <div class="text-center">
+                <span class="text-muted">
+                    Copyright &copy; <script>document.write(new Date().getFullYear())</script> AcademiGrade
+                </span>
+            </div>
+        </div>
+    </footer>
+    <script src="{% static 'js/bootstrap.bundle.js' %}"></script> 
+</body>
+</html>

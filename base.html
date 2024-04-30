@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AcademiGrade</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}"> 
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}"> 
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0">
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">ACADEMIGRADE</a>
+        </div>
+    </nav>
+
+   <!----------------body------------------------->
+
+   <!---------------Pied de page------------------------->
+    <footer class="footer mt-auto py-3 bg-light">
+        <div class="container">
+            <div class="text-center">
+                <span class="text-muted">
+                    Copyright &copy; <script>document.write(new Date().getFullYear())</script> AcademiGrade
+                </span>
+            </div>
+        </div>
+    </footer>
+    <script src="{% static 'js/bootstrap.bundle.js' %}"></script> 
+</body>
+</html>

@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AcademiGrade</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+<nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"></a>
+    </div>
+</nav>
+
+<!----------------body------------------------->
+<div class="container d-flex">
+    <img src="{% static 'images/logo.png' %}" alt="Logo AcademiGrade">
+</div>
+
+<div class="container flex bg-light mt-5 mb-5">
+    <div class="row border bg-light p-5 rounded">
+        <p class="text-center">Connectez-vous!</p>
+
+        <div class="col-12 d-flex align-items-center justify-content-center mt-5">
+            <div class="row">
+                <div class="col-6">
+                    <a href="{% url 'connexionES' %}" class="btn  btn-outline-dark border border-4 rounded-3 mb-3 m-3 p-3 w-100 ">
+                        <p>Je suis</p>
+                        <p>ENSEIGNANT</p>
+                    </a>
+                </div>
+                <div class="col-6 ">
+                    <a href="{% url 'connexionET' %}" class="btn  btn-outline-dark border border-4 rounded-3 mb-3 m-3 p-3 w-100">
+                        <p>Je suis un</p>
+                        <p>ETUDIANT</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----------------pieds de page------------------------->
+<footer class="footer mt-auto">
+    <div class="container">
+        <div class="text-center">
+            <span class="text-muted">
+                Copyright &copy; <script>document.write(new Date().getFullYear())</script> AcademiGrade
+            </span>
+        </div>
+    </div>
+</footer>
+<script src="{% static 'js/bootstrap.bundle.js' %}"></script>
+</body>
+</html>
